@@ -32,3 +32,101 @@
 
 .version-notice{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;display:flex;align-items:center;justify-content:space-between;gap:18px;width:min(500px,calc(100% - 32px));padding:16px 20px;color:#fff;background:#172b49;box-shadow:0 10px 35px #101f3855;font-size:14px}
 .version-notice button{border:1px solid #e9d1b8;background:transparent;color:#fff;padding:8px 12px;font-weight:700;white-space:nowrap}
+
+/* A lighter, contemporary editorial layer across the site. */
+:root{color:#1b2d3e;background:#f7f6f2}
+body{background:#f7f6f2}
+.container{width:min(100% - 96px,1220px)}
+.site-header{position:sticky;top:0;background:rgba(248,247,243,.92);border-bottom:1px solid rgba(25,47,63,.09);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);z-index:50}
+.header-inner{min-height:82px}
+.brand-mark{width:47px;height:47px;background:#f5ede3;border-color:#ad7655}
+.brand-name{font-size:14px;letter-spacing:.12em;color:#192f40}
+.brand-name small{font-size:9px;letter-spacing:.23em}
+.nav{gap:6px;padding:5px;background:#eeece6;border:1px solid #e6e2da;border-radius:999px}
+.nav a{padding:10px 15px;border-radius:999px;font-size:13px;transition:background .2s,color .2s,box-shadow .2s}
+.nav a:hover,.nav a.active{background:#fff;color:#253d4f;box-shadow:0 2px 8px #20374812}
+.eyebrow{letter-spacing:.17em;font-size:11px;color:#b36c45}
+.hero{position:relative;background:radial-gradient(circle at 80% 35%,#304a60 0,#192f47 30%,#112439 68%);isolation:isolate}
+.hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,transparent 45%,#c59c6912 75%,transparent),repeating-linear-gradient(90deg,transparent 0,transparent 119px,#ffffff07 120px);pointer-events:none}
+.hero-grid{min-height:640px;grid-template-columns:1.08fr .92fr;gap:50px}
+.hero-content{padding:92px 0 83px}
+.hero h1{font-size:clamp(51px,5.6vw,82px);line-height:1.15;letter-spacing:-.06em;margin:26px 0 28px}
+.hero h1 em{color:#e4b58e}
+.hero-content>p{font-size:18px;line-height:1.75;max-width:540px;color:#d3dce1}
+.hero-actions{margin-top:42px}
+.hero-art{min-width:0;height:auto;aspect-ratio:1;filter:drop-shadow(0 20px 40px #091b2d77)}
+.hero-art:before{content:'';position:absolute;width:83%;height:83%;border-radius:50%;background:radial-gradient(circle,#d59b641d,transparent 65%);opacity:1}
+.hero-diagram{position:relative;max-width:490px}
+.hero-bottom{border-color:#c7d5dc2b;padding:19px 0 22px}
+.button{border-radius:10px;min-width:185px;padding:16px 21px;box-shadow:0 7px 20px #0c203017}
+.button-light{background:#f4ede4}
+.button-outline{border-color:#cfd9d6aa}
+.text-link{border-color:#bd805a;text-underline-offset:5px}
+.intro-section{padding-block:105px;align-items:center}
+.section-heading h2,.section-title-row h2,.mission-grid h2,.contact-note h2{letter-spacing:-.055em}
+.intro-copy{padding-top:0}
+.intro-copy p,.mission-grid p{color:#4c6070}
+.latest-section,.recent-section{background:#eef0ec}
+.latest-section{padding:95px 0 105px}
+.archive-grid{gap:18px}
+.archive-panel{position:relative;overflow:hidden;min-height:350px;border-radius:20px;padding:32px 36px 36px;transition:transform .25s,box-shadow .25s}
+.archive-panel:hover{transform:translateY(-5px);box-shadow:0 22px 44px #142c3b19}
+.archive-panel:after{content:'◌';position:absolute;right:-26px;top:-110px;font:300 330px/1 Georgia,serif;opacity:.08;pointer-events:none}
+.dark-panel{background:linear-gradient(140deg,#1b3b4b,#142a3b 65%)}
+.article-panel{background:linear-gradient(130deg,#e3d5c0,#eadfce 70%)}
+.archive-panel h3{position:relative;font-size:clamp(26px,2.5vw,34px);max-width:440px}
+.archive-panel p{position:relative}
+.archive-panel .button{position:relative}
+.dayanand-section{background:#efe7da;padding:100px 0}
+.dayanand-grid{gap:90px}
+.dayanand-figure{border-radius:20px;overflow:hidden;box-shadow:0 22px 45px #69533c23}
+.dayanand-figure img{width:100%;object-fit:cover}
+.dayanand-figure figcaption{background:#f7f3eb}
+.home-founders{background:#f7f6f2;padding:100px 0}
+.home-founder{border-radius:20px;padding:12px 12px 22px;background:#fff;border:1px solid #ebe9e2;box-shadow:0 10px 28px #2137480a;transition:transform .25s,box-shadow .25s}
+.home-founder:hover{transform:translateY(-5px);box-shadow:0 20px 40px #21374818}
+.home-founder-photo{border-radius:12px;aspect-ratio:1.2;margin-bottom:22px}
+.home-founder>span,.home-founder h3{margin-left:15px;margin-right:15px}
+.home-founder h3{font-size:clamp(20px,2vw,25px)}
+.recent-section{padding:95px 0 105px}
+.article-card{border-radius:18px;border-color:#e3e6df;min-height:320px;box-shadow:0 8px 25px #2137480a}
+.article-card:hover{border-color:#c2906e;transform:translateY(-4px);box-shadow:0 18px 36px #21374815}
+.article-icon{color:#b67752}
+.footer{background:#11283a}
+.footer-symbol{color:#d6a076}
+.page-heading{padding-top:88px}
+.page-heading h1{letter-spacing:-.06em}
+.publication-card{border-radius:16px;border-color:#e8e9e3;box-shadow:0 6px 22px #21374809;transition:transform .2s,box-shadow .2s}
+.publication-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px #21374815}
+.search-field,.select-field select{border-radius:10px;border-color:#dfe2dc}
+.about-hero{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 15%,#32526a,#1a344d 35%,#14283b 85%);padding:110px 0 115px}
+.about-hero:after{content:'◌';position:absolute;right:-50px;top:-190px;font:400 650px/1 Georgia,serif;color:#ffffff09;pointer-events:none}
+.about-hero .container{position:relative;z-index:1}
+.about-hero h1{letter-spacing:-.055em}
+.principles-section{background:#e5e9e4}
+.about-dayanand-photo{border-radius:16px;overflow:hidden;box-shadow:0 15px 32px #21374820}
+.founders-section{background:#eef0ec}
+.founder-grid{gap:18px}
+.founder-card{border-radius:18px;padding:12px 12px 30px;border:1px solid #e6e8e2;box-shadow:0 8px 24px #2137480a}
+.founder-photo{border-radius:11px;overflow:hidden}
+.founder-detail{border:1px solid #e2e7e2;border-top:3px solid #b47b56;border-radius:16px;box-shadow:0 7px 22px #21374808}
+.contact-note{padding-block:95px}
+.version-notice{border-radius:12px}
+
+.inspiration-section{padding:95px 0 105px;background:#e8ede8}
+.inspiration-header{display:flex;align-items:end;justify-content:space-between;gap:60px;margin-bottom:34px}
+.inspiration-header h2{font:400 clamp(34px,3.4vw,50px)/1.25 'Libre Baskerville',Georgia,serif;letter-spacing:-.055em;max-width:680px;margin:16px 0 0}
+.inspiration-header h2 em{color:#a86c4b;font-weight:400}
+.inspiration-header>p{max-width:350px;margin:0 0 4px;color:#536774;line-height:1.75;font-size:15px}
+.inspiration-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.inspiration-card{min-height:278px;display:flex;flex-direction:column;justify-content:space-between;background:#fdfcf9;border:1px solid #dfe5df;border-radius:16px;padding:23px 22px 25px;transition:transform .22s,box-shadow .22s}
+.inspiration-card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #173a3d16}
+.inspiration-number{display:flex;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:.12em;color:#b07450}
+.inspiration-number span{font-size:21px;line-height:1}
+.inspiration-context{font-size:10px;text-transform:uppercase;letter-spacing:.17em;font-weight:700;color:#a46d4c}
+.inspiration-card h3{font:400 clamp(19px,1.7vw,24px)/1.36 'Libre Baskerville',Georgia,serif;letter-spacing:-.035em;margin:10px 0 10px}
+.inspiration-card p{font-size:13px;line-height:1.6;color:#5b6d75;margin:0}
+
+@media(max-width:900px){.container{width:min(100% - 48px,1220px)}.nav{gap:0}.nav a{padding:9px 11px}.hero-grid{gap:10px}.inspiration-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.inspiration-card{min-height:235px}.inspiration-header{gap:30px}.dayanand-grid{gap:45px}}
+@media(max-width:700px){.container{width:min(100% - 40px,1220px)}.site-header{backdrop-filter:none;background:#f8f7f3}.header-inner{min-height:72px}.nav{top:72px;left:12px;right:12px;gap:2px;padding:9px;background:#f8f7f3;border:1px solid #e6e2da;border-radius:0 0 14px 14px;box-shadow:0 16px 25px #14283b19}.nav a{border-radius:8px;padding:12px 15px}.hero-grid{min-height:0;gap:0}.hero-content{padding:75px 0 18px}.hero h1{font-size:clamp(43px,9vw,63px);white-space:normal}.hero-content>p{font-size:16px}.hero-actions{margin-top:32px}.hero-art{width:min(100%,330px);height:auto;aspect-ratio:auto;margin:0 auto 20px}.hero-bottom{padding:15px 0}.intro-section{padding-block:74px}.latest-section,.recent-section,.home-founders,.inspiration-section{padding:75px 0 82px}.inspiration-header{display:block}.inspiration-header>p{max-width:620px;margin:20px 0 0}.inspiration-grid{gap:12px}.inspiration-card{min-height:250px}.dayanand-section{padding:78px 0}.dayanand-figure{margin-top:35px}.about-hero{padding:80px 0}.founder-grid{gap:18px}.founder-card{padding:12px 12px 26px}.founder-photo{aspect-ratio:5/3}.contact-note{padding-block:75px}}
+@media(max-width:480px){.container{width:min(100% - 32px,1220px)}.hero h1{font-size:clamp(41px,11vw,52px)}.hero-actions{align-items:stretch;gap:20px}.hero-actions .button{width:100%}.inspiration-grid{grid-template-columns:1fr}.inspiration-card{min-height:210px}.inspiration-header h2{font-size:35px}.archive-panel{min-height:320px}.home-founder-photo{aspect-ratio:1.3}.founder-detail{padding:24px 22px}.version-notice{align-items:start;flex-direction:column}}
