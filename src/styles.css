@@ -162,3 +162,7 @@ body{background:#f7f6f2}
 .hero-sun-rays{transform-origin:260px 190px;animation:sun-turn 28s linear infinite}
 @keyframes sun-turn{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.hero-sun-rays{animation:none}}
+
+/* Portrait crop positions follow the founders' displayed order. */
+.home-founder:nth-child(2) img,.founder-card:nth-child(2) .founder-photo img{object-position:center 40%}
+.home-founder:nth-child(3) img,.founder-card:nth-child(3) .founder-photo img{object-position:center 18%}

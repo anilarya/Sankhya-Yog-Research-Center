@@ -136,8 +136,8 @@ function ArticleDetail({ slug }) {
 
 const founders = [
   { name: 'Dr. Harish Chandra', role: 'Founder · Scholar', image: 'harish-chandra.webp', alt: 'Portrait of Dr. Harish Chandra', summary: 'Scientist and scholar of Sāṅkhya, Yoga Darśana, and Pātañjala Upāsanā.', bio: 'Dr. Harish Chandra studied engineering at IIT Kanpur and earned a PhD at Princeton University in mathematical simulation of automotive engine combustion. Following an international career in combustion research, he turned his full attention to the study and teaching of meditation philosophy in 1996. His work centers on Sāṅkhya, Yoga Darśana, and Pātañjala Upāsanā. His interpretation of these traditions is the intellectual foundation of the center.' },
-  { name: 'Anil Arya', role: 'Co-founder · Technology', image: 'anil-arya.webp', alt: 'Portrait of Anil Arya', summary: 'Software engineer helping make the center’s research accessible online.', bio: 'Anil Arya is a lead software engineer in the IT industry. He earned a B.Tech in Computer Science and Engineering from Motilal Nehru National Institute of Technology Allahabad, Prayagraj. He helps make the center’s research and writing accessible through its digital platform.' },
   { name: 'Rounak Maheshwari', role: 'Co-founder · Professional practice', image: 'rounak-maheshwari.webp', alt: 'Portrait of Rounak Maheshwari', summary: 'Chartered accountancy professional and co-founder of this center.', bio: 'Rounak Maheshwari is an experienced chartered accountancy professional and co-founder of the Sankhya Yog Research Center. He also co-founded and helps run Samyak Dhyan Sangh (SDS), a separate initiative that brings people together to learn and practice Pātañjala Upāsanā.' },
+  { name: 'Anil Arya', role: 'Co-founder · Technology', image: 'anil-arya.webp', alt: 'Portrait of Anil Arya', summary: 'Software engineer helping make the center’s research accessible online.', bio: 'Anil Arya is a lead software engineer in the IT industry. He earned a B.Tech in Computer Science and Engineering from Motilal Nehru National Institute of Technology Allahabad, Prayagraj. He helps make the center’s research and writing accessible through its digital platform.' },
 ]
 
 function About() {
@@ -149,7 +149,7 @@ function About() {
     </article>)}</div>
     <div className="founder-detail-grid">
       <article className="founder-detail"><Eyebrow>DR. HARISH CHANDRA · SCHOLARSHIP</Eyebrow><h3>Science and the study of mind</h3><p>{founders[0].bio}</p></article>
-      <article className="founder-detail"><Eyebrow>ROUNAK MAHESHWARI · CO-FOUNDER</Eyebrow><h3>Community and practice</h3><p>{founders[2].bio}</p>
+      <article className="founder-detail"><Eyebrow>ROUNAK MAHESHWARI · CO-FOUNDER</Eyebrow><h3>Community and practice</h3><p>{founders[1].bio}</p>
         <div className="sds-contact"><div><span>SDS COMMUNITY CONTACT</span><a className="sds-phone" href="https://wa.me/919082703043" target="_blank" rel="noopener noreferrer">+91 90827 03043 <Arrow diagonal /></a><a className="sds-channel-link" href="https://whatsapp.com/channel/0029Vb6eLkPJ93wRvtmnoB2O" target="_blank" rel="noopener noreferrer">Join SDS channel <Arrow diagonal /></a><small>Scan the code to join the channel</small></div><a className="sds-qr" href="https://whatsapp.com/channel/0029Vb6eLkPJ93wRvtmnoB2O" target="_blank" rel="noopener noreferrer" aria-label="Join the SDS WhatsApp channel"><img src={asset('sds-channel-qr.svg')} alt="QR code for the SDS WhatsApp channel" loading="lazy" /></a></div>
       </article>
     </div>
