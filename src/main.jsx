@@ -57,7 +57,7 @@ function ArticleCard({ article, featured = false }) {
 }
 
 function HeroEmblem() {
-  return <div className="hero-art"><svg className="hero-diagram" viewBox="0 0 520 520" role="img" aria-labelledby="diagram-title diagram-desc">
+  return <div className="hero-art"><img className="hero-orbit-gif" src={asset('orbit-points.gif')} alt="" aria-hidden="true" /><svg className="hero-diagram" viewBox="0 0 520 520" role="img" aria-labelledby="diagram-title diagram-desc">
     <title id="diagram-title">Sāṅkhya and Yoga</title>
     <desc id="diagram-desc">A circular motif with Sāṅkhya and Yoga at its center, surrounded by inquiry and reflection.</desc>
     <defs><linearGradient id="ring-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#9d6e50" /><stop offset=".5" stopColor="#d6ab85" /><stop offset="1" stopColor="#93674c" /></linearGradient></defs>
@@ -88,7 +88,7 @@ function Inspiration() {
 function Home() {
   return <>
     <section className="hero"><div className="container hero-grid">
-      <div className="hero-content"><Eyebrow>AN OPEN SPACE FOR PHILOSOPHICAL INQUIRY</Eyebrow><h1>Ancient insight.<br /><em>Careful inquiry.</em></h1><p>Exploring Sāṅkhya, Yoga Darśana, and Vedic thought through research, interpretation, and dialogue.</p><div className="hero-actions"><a className="button button-light" href="#/papers">Explore research <Arrow /></a><a className="text-link light-link" href="#/about">About the center <Arrow diagonal /></a></div></div>
+      <div className="hero-content"><Eyebrow>AN OPEN SPACE FOR PHILOSOPHICAL INQUIRY</Eyebrow><h1>Ancient insight.<br /><em>Careful inquiry.</em></h1><p>Exploring Sāṅkhya, Yoga Darśana, and Vedic thought through research, interpretation, and dialogue.</p><div className="hero-actions"><a className="button button-light" href="#/papers">Browse research papers <Arrow /></a><a className="text-link light-link" href="#/about">Meet the center <Arrow diagonal /></a></div></div>
       <HeroEmblem />
     </div><div className="container hero-bottom"><span>THOUGHT, PRACTICE & THE SEARCH FOR KNOWLEDGE</span><span>01 / THE CENTER</span></div></section>
 
