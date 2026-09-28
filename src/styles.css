@@ -22,3 +22,13 @@
 .sds-contact{margin:26px 14px 0;padding:18px 0 0;border-top:1px solid #e4ded4;display:flex;align-items:center;justify-content:space-between;gap:14px}.sds-contact>div{min-width:0}.sds-contact span{display:block;color:#a56e4d;font-size:11px;letter-spacing:.11em;font-weight:700}.sds-phone{display:block;font-size:16px;font-weight:700;white-space:nowrap;margin:7px 0;color:#172b49}.sds-contact small{display:block;font-size:12px;line-height:1.4;color:#687386}.sds-qr{flex:0 0 84px;background:#fff;border:1px solid #e6e0d8;padding:4px}.sds-qr img{width:74px;height:74px;image-rendering:pixelated}
 .sds-channel-link{display:inline-block;font-size:13px;font-weight:700;color:#995f3d;text-decoration:underline;text-underline-offset:3px;margin:6px 0}.sds-qr{flex-basis:122px}.sds-qr img{width:112px;height:112px;image-rendering:auto}
 @media(max-width:480px){.sds-contact{flex-direction:column;align-items:flex-start}.sds-qr{flex:0 0 auto}}
+
+.founder-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:28px;align-items:stretch}
+.founder-detail{background:#faf9f6;border-top:2px solid #b47b56;padding:30px 34px 34px}
+.founder-detail h3{font:400 clamp(23px,2.2vw,29px)/1.4 'Libre Baskerville',Georgia,serif;letter-spacing:-.035em;margin:15px 0 17px}
+.founder-detail>p{font-size:15px;line-height:1.85;color:#536075;margin:0}
+.founder-detail .sds-contact{margin:26px 0 0}
+@media(max-width:700px){.founder-detail-grid{grid-template-columns:1fr;gap:18px}.founder-detail{padding:27px 24px}}
+
+.version-notice{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:100;display:flex;align-items:center;justify-content:space-between;gap:18px;width:min(500px,calc(100% - 32px));padding:16px 20px;color:#fff;background:#172b49;box-shadow:0 10px 35px #101f3855;font-size:14px}
+.version-notice button{border:1px solid #e9d1b8;background:transparent;color:#fff;padding:8px 12px;font-weight:700;white-space:nowrap}

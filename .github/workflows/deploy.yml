@@ -24,7 +24,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Stamp deployment version
+        run: printf '{"version":"%s"}\n' "$GITHUB_SHA" > public/version.json
       - run: npm run build
+        env:
+          VITE_DEPLOY_SHA: ${{ github.sha }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
