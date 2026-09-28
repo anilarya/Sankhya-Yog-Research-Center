@@ -60,15 +60,16 @@ function HeroEmblem() {
   return <div className="hero-art"><img className="hero-orbit-gif" src={asset('orbit-points.gif')} alt="" aria-hidden="true" /><svg className="hero-diagram" viewBox="0 0 520 520" role="img" aria-labelledby="diagram-title diagram-desc">
     <title id="diagram-title">Sāṅkhya and Yoga</title>
     <desc id="diagram-desc">A circular motif with Sāṅkhya and Yoga at its center, surrounded by inquiry and reflection.</desc>
-    <defs><linearGradient id="ring-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#9d6e50" /><stop offset=".5" stopColor="#d6ab85" /><stop offset="1" stopColor="#93674c" /></linearGradient></defs>
+    <defs><linearGradient id="ring-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#9d6e50" /><stop offset=".5" stopColor="#d6ab85" /><stop offset="1" stopColor="#93674c" /></linearGradient><radialGradient id="sun-glow"><stop offset="0" stopColor="#edbb87" stopOpacity=".37" /><stop offset="1" stopColor="#edbb87" stopOpacity="0" /></radialGradient></defs>
     <circle cx="260" cy="260" r="210" fill="none" stroke="url(#ring-gradient)" strokeWidth="1.5" opacity=".85" />
     <circle cx="260" cy="260" r="158" fill="none" stroke="#9e765d" strokeWidth="1.2" opacity=".72" />
     <circle cx="260" cy="260" r="107" fill="#162841" stroke="#b68a69" strokeWidth="1.3" />
     <circle cx="260" cy="50" r="4" fill="#d6ab85" /><circle cx="470" cy="260" r="4" fill="#d6ab85" /><circle cx="260" cy="470" r="4" fill="#d6ab85" /><circle cx="50" cy="260" r="4" fill="#d6ab85" />
     <path d="M260 72v14 M260 434v14 M72 260h14 M434 260h14" stroke="#c69b77" strokeWidth="1" opacity=".8" />
-    <text x="260" y="249" textAnchor="middle" className="diagram-main">सांख्य</text>
-    <path d="M228 268h64" stroke="#b88968" strokeWidth="1" opacity=".8" />
-    <text x="260" y="309" textAnchor="middle" className="diagram-secondary">योग</text>
+    <g className="hero-sun" aria-hidden="true"><circle cx="260" cy="190" r="43" fill="url(#sun-glow)" /><g className="hero-sun-rays" fill="none" stroke="#ddb283" strokeWidth="1.5" strokeLinecap="round" opacity=".82"><path d="M260 165v8 M260 207v8 M235 190h8 M277 190h8 M242 172l6 6 M272 202l6 6 M278 172l-6 6 M248 202l-6 6" /></g><circle cx="260" cy="190" r="10" fill="#e9b982" /><circle cx="260" cy="190" r="6" fill="#f7d8a5" /></g>
+    <text x="260" y="270" textAnchor="middle" className="diagram-main">सांख्य</text>
+    <path d="M228 287h64" stroke="#b88968" strokeWidth="1" opacity=".8" />
+    <text x="260" y="327" textAnchor="middle" className="diagram-secondary">योग</text>
     <text x="402" y="125" textAnchor="middle" className="diagram-label">विचार</text>
     <text x="112" y="412" textAnchor="middle" className="diagram-label">अध्ययन</text>
   </svg></div>
