@@ -89,7 +89,7 @@ function Inspiration() {
 function FeaturedMantra() {
   return <section className="featured-mantra" aria-labelledby="mantra-heading"><div className="container">
     <div className="mantra-heading"><div><Eyebrow>VEDIC REFLECTION · YAJURVEDA 7.5</Eyebrow><h2 id="mantra-heading">A mantra for <em>inner inquiry.</em></h2></div><span className="mantra-reference">यजुर्वेद · ७.५</span></div>
-    <blockquote className="mantra-verse" lang="sa">अ॒न्तस्ते॒ द्यावा॑पृथि॒वी द॑धाम्य॒न्तर्द॑धाम्यु॒र्वन्तरि॑क्षम्।<br />स॒जूर्दे॒वेभि॒रव॑रैः॒ ॒परै॑श्चान्तर्या॒मे म॑घवन् मादयस्व॥५॥</blockquote>
+    <blockquote className="mantra-verse" lang="sa">अन्तस्ते द्यावापृथिवी दधाम्यन्तर्दधाम्युर्वन्तरिक्षम् ।<br />सजूर्देवेभिरवरैः परैश्चान्तर्यामे मघवन्मादयस्व ॥</blockquote>
     <div className="mantra-meaning" lang="hi">
       <article><h3>पदार्थ</h3><p>हे (मघवन्) योगी! मैं परमेश्वर (ते) तेरे (अन्तः) हृदयाकाश में (द्यावापृथिवी) सूर्य्य-भूमि के समान विज्ञानादि पदार्थों को (दधामि) स्थापित करता हूं तथा (उरु) विस्तृत (अन्तरिक्षम्) अवकाश को (अन्तः) शरीर के भीतर (दधामि) धरता हूं (सजूः) मित्र के समान तू (देवेभिः) विद्वानों से विद्या को प्राप्त हो के (अवरैः) (परैः) (च) थोड़े वा बहुत योग व्यवहारों से (अन्तर्य्यामे) भीतरले नियमों में वर्त्तमान होकर अन्य सब को (मादयस्व) प्रसन्न किया कर॥५॥</p></article>
       <article><h3>भावार्थ</h3><p>इस मन्त्र में वाचकलुप्तोपमालङ्कार है। ईश्वर का यह उपदेश है कि ब्रह्माण्ड में जिस प्रकार के जितने पदार्थं हैं, उसी प्रकार के उतने ही मेरे ज्ञान में वर्त्तमान हैं। योगविद्या को नहीं जानने वाला उनको नहीं देख सकता और मेरी उपासना के विना कोई योगी नहीं हो सकता है॥५॥</p></article>
