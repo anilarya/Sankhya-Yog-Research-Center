@@ -163,6 +163,19 @@ body{background:#f7f6f2}
 @keyframes sun-turn{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.hero-sun-rays{animation:none}}
 
+.language-filter{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}
+.language-option{display:inline-flex;align-items:center;gap:13px;border:1px solid #d9ded8;background:#fff;color:#34465a;border-radius:999px;padding:12px 17px;font:600 14px/1.2 inherit;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.language-option:hover{border-color:#ba8867;transform:translateY(-1px)}
+.language-option:focus-visible{outline:3px solid #c99165;outline-offset:3px}
+.language-option.selected{background:#193650;border-color:#193650;color:#fff}
+.language-option span{font-size:12px;min-width:22px;text-align:center;border-radius:999px;padding:3px 7px;background:#f2eee7;color:#735744}
+.language-option.selected span{background:#ffffff26;color:#fff}
+.paper-results{font-size:13px;color:#667485;margin:0 0 22px}
+.paper-language-group+.paper-language-group{margin-top:53px}
+.paper-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid #d8d5cd;margin:0 0 18px;padding-bottom:15px}
+.paper-group-heading h2{font:400 clamp(24px,2.6vw,34px)/1.3 'Libre Baskerville',Georgia,serif;margin:0;color:#21354b}
+.paper-group-heading span{font-size:11px;font-weight:700;letter-spacing:.13em;color:#a36d50;white-space:nowrap}
+
 /* Portrait crop positions follow the founders' displayed order. */
 .home-founder:nth-child(2) img,.founder-card:nth-child(2) .founder-photo img{object-position:center 40%}
 .home-founder:nth-child(3) img,.founder-card:nth-child(3) .founder-photo img{object-position:center 18%}
