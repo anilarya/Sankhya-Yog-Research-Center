@@ -100,7 +100,7 @@ function FeaturedMantra() {
 function Home() {
   return <>
     <section className="hero"><div className="container hero-grid">
-      <div className="hero-content"><Eyebrow>AN OPEN SPACE FOR PHILOSOPHICAL INQUIRY</Eyebrow><h1>Ancient insight.<br /><em>Careful inquiry.</em></h1><p>Exploring Sāṅkhya, Yoga Darśana, and Vedic thought through research, interpretation, and dialogue.</p><div className="hero-actions"><a className="button button-light" href="#/papers">Browse research papers <Arrow /></a><a className="text-link light-link" href="#/about">Meet the center <Arrow diagonal /></a></div></div>
+      <div className="hero-content"><Eyebrow>AN OPEN SPACE FOR PHILOSOPHICAL INQUIRY</Eyebrow><h1>Ancient wisdom.<br /><em>Rigorous inquiry.</em></h1><p>Exploring Sāṅkhya, Yoga Darśana, and Vedic thought through research, interpretation, and dialogue.</p><div className="hero-actions"><a className="button button-light" href="#/papers">Browse research papers <Arrow /></a><a className="text-link light-link" href="#/about">Meet the center <Arrow diagonal /></a></div></div>
       <HeroEmblem />
     </div><div className="container hero-bottom"><span>THOUGHT, PRACTICE & THE SEARCH FOR KNOWLEDGE</span><span>01 / THE CENTER</span></div></section>
 
