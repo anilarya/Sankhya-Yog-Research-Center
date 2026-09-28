@@ -86,12 +86,25 @@ function Inspiration() {
   return <section className="inspiration-section"><div className="container"><div className="inspiration-header"><div><Eyebrow>INSPIRATIONAL PERSONALITIES</Eyebrow><h2>Wisdom that guides <em>our inquiry.</em></h2></div><p>We draw inspiration from sages and teachers across the traditions we study. Their place here is one of inspiration; the center is an independent research body.</p></div><div className="inspiration-grid">{inspirations.map((person, index) => <article className="inspiration-card" key={person.name}><span className="inspiration-number">0{index + 1} <span aria-hidden="true">✳</span></span><div><span className="inspiration-context">{person.context}</span><h3>{person.name}</h3><p>{person.description}</p></div></article>)}</div></div></section>
 }
 
+function FeaturedMantra() {
+  return <section className="featured-mantra" aria-labelledby="mantra-heading"><div className="container">
+    <div className="mantra-heading"><div><Eyebrow>VEDIC REFLECTION · YAJURVEDA 7.5</Eyebrow><h2 id="mantra-heading">A mantra for <em>inner inquiry.</em></h2></div><span className="mantra-reference">यजुर्वेद · ७.५</span></div>
+    <blockquote className="mantra-verse" lang="sa">अ॒न्तस्ते॒ द्यावा॑पृथि॒वी द॑धाम्य॒न्तर्द॑धाम्यु॒र्वन्तरि॑क्षम्।<br />स॒जूर्दे॒वेभि॒रव॑रैः॒ ॒परै॑श्चान्तर्या॒मे म॑घवन् मादयस्व॥५॥</blockquote>
+    <div className="mantra-meaning" lang="hi">
+      <article><h3>पदार्थ</h3><p>हे (मघवन्) योगी! मैं परमेश्वर (ते) तेरे (अन्तः) हृदयाकाश में (द्यावापृथिवी) सूर्य्य-भूमि के समान विज्ञानादि पदार्थों को (दधामि) स्थापित करता हूं तथा (उरु) विस्तृत (अन्तरिक्षम्) अवकाश को (अन्तः) शरीर के भीतर (दधामि) धरता हूं (सजूः) मित्र के समान तू (देवेभिः) विद्वानों से विद्या को प्राप्त हो के (अवरैः) (परैः) (च) थोड़े वा बहुत योग व्यवहारों से (अन्तर्य्यामे) भीतरले नियमों में वर्त्तमान होकर अन्य सब को (मादयस्व) प्रसन्न किया कर॥५॥</p></article>
+      <article><h3>भावार्थ</h3><p>इस मन्त्र में वाचकलुप्तोपमालङ्कार है। ईश्वर का यह उपदेश है कि ब्रह्माण्ड में जिस प्रकार के जितने पदार्थं हैं, उसी प्रकार के उतने ही मेरे ज्ञान में वर्त्तमान हैं। योगविद्या को नहीं जानने वाला उनको नहीं देख सकता और मेरी उपासना के विना कोई योगी नहीं हो सकता है॥५॥</p></article>
+    </div>
+  </div></section>
+}
+
 function Home() {
   return <>
     <section className="hero"><div className="container hero-grid">
       <div className="hero-content"><Eyebrow>AN OPEN SPACE FOR PHILOSOPHICAL INQUIRY</Eyebrow><h1>Ancient insight.<br /><em>Careful inquiry.</em></h1><p>Exploring Sāṅkhya, Yoga Darśana, and Vedic thought through research, interpretation, and dialogue.</p><div className="hero-actions"><a className="button button-light" href="#/papers">Browse research papers <Arrow /></a><a className="text-link light-link" href="#/about">Meet the center <Arrow diagonal /></a></div></div>
       <HeroEmblem />
     </div><div className="container hero-bottom"><span>THOUGHT, PRACTICE & THE SEARCH FOR KNOWLEDGE</span><span>01 / THE CENTER</span></div></section>
+
+    <FeaturedMantra />
 
     <section className="intro-section container"><div className="section-heading"><Eyebrow>OUR PURPOSE</Eyebrow><h2>Where rigorous study meets <em>living inquiry.</em></h2></div><div className="intro-copy"><p>We bring together research papers and articles on the philosophical foundations of Sāṅkhya and Yoga. The center accepts the ten principles of Arya Samaj as its core principles and pursues this research as an independent body.</p><a className="text-link" href="#/about">Discover our mission <Arrow /></a></div></section>
 
