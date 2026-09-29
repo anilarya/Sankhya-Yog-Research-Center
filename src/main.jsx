@@ -52,7 +52,7 @@ function ArticleCard({ article, featured = false }) {
   return <article className={`article-card ${featured ? 'featured' : ''}`}>
     <div className="article-card-top"><span className="article-icon" aria-hidden="true">✳</span><span>{article.category} / {article.readingTime}</span></div>
     <div><h3><a href={href(`articles/${article.slug}`)}>{article.title}</a></h3><p>{article.description}</p></div>
-    <div className="article-card-bottom"><span>{readableDate(article.date)}</span><a href={href(`articles/${article.slug}`)} aria-label={`Read ${article.title}`}><Arrow diagonal /></a></div>
+    <div className="article-card-bottom"><span>{article.displayDate || readableDate(article.date)}</span><a href={href(`articles/${article.slug}`)} aria-label={`Read ${article.title}`}><Arrow diagonal /></a></div>
   </article>
 }
 
@@ -149,7 +149,7 @@ function Articles() {
 function ArticleDetail({ slug }) {
   const article = articles.find(a => a.slug === slug)
   if (!article) return <NotFound />
-  return <main className="page-main"><article className="container reading-layout"><a className="back-link" href="#/articles">← All articles</a><header className="reading-header"><Eyebrow>{article.category} / {article.readingTime}</Eyebrow><h1>{article.title}</h1><p>{article.description}</p><div className="reading-meta">By {article.author} <span>·</span> {readableDate(article.date)}</div></header><div className="prose"><ReactMarkdown>{article.body}</ReactMarkdown></div><div className="reading-end"><span>✳</span><a href="#/articles">Explore more articles <Arrow /></a></div></article></main>
+  return <main className="page-main"><article className="container reading-layout"><a className="back-link" href="#/articles">← All articles</a><header className="reading-header"><Eyebrow>{article.category} / {article.readingTime}</Eyebrow><h1>{article.title}</h1><p>{article.description}</p><div className="reading-meta">By {article.author} <span>·</span> {article.displayDate || readableDate(article.date)}</div></header><div className="prose"><ReactMarkdown>{article.body}</ReactMarkdown></div>{article.pdf && <section className="article-pdf" aria-label={`Full PDF: ${article.title}`}><div className="article-pdf-actions"><div><Eyebrow>THE COMPLETE DOCUMENT</Eyebrow><h2>Read the full PDF</h2></div><div className="detail-actions"><a className="button button-navy" href={asset(article.pdf)} target="_blank" rel="noopener noreferrer">Open PDF <Arrow diagonal /></a><a className="text-link" href={asset(article.pdf)} download>Download PDF ↓</a></div></div><div className="pdf-shell"><iframe title={`PDF: ${article.title}`} src={`${asset(article.pdf)}#view=FitH`} /><div className="pdf-fallback">If the document does not display, <a href={asset(article.pdf)} target="_blank" rel="noopener noreferrer">open the PDF in a new tab</a>.</div></div></section>}<div className="reading-end"><span>✳</span><a href="#/articles">Explore more articles <Arrow /></a></div></article></main>
 }
 
 const founders = [

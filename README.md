@@ -32,6 +32,8 @@ Write the article here. Use Markdown headings, lists, and links.
 
 The filename becomes its link, such as `#/articles/understanding-sankhya`. Commit and push to publish. The `welcome.md` article explains the center; it is not presented as a research paper.
 
+For an article accompanied by a PDF, place the document in `public/articles/` and add `pdf: articles/filename.pdf` to its frontmatter. The article page will show an embedded reader, an open link, and a download link. Use `displayDate` when a source gives a month or edition rather than a specific publication day.
+
 ## Publish a PDF paper
 
 1. Place the final PDF in `public/papers/`, using a URL-safe filename such as `paper-title.pdf`.
