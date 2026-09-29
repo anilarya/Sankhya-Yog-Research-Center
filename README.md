@@ -50,7 +50,7 @@ The filename becomes its link, such as `#/articles/understanding-sankhya`. Commi
 }
 ```
 
-The paper will appear in the searchable archive at `#/papers`; its reader URL will be `#/papers/paper-title`. Readers can view it in an iframe, open it directly, or download it. Do not add an entry before its PDF is present. The archive intentionally starts empty because no papers were supplied for this build.
+The paper will appear in the searchable archive at `#/papers`; its reader URL will be `#/papers/paper-title`. Readers can filter by language and topic, view the PDF in an iframe, open it directly, or download it. Do not add an entry before its PDF is present. English and Hindi editions of Dr. Harish Chandra's *White Paper on Upasana* are included.
 
 ## Publish on GitHub Pages
 
